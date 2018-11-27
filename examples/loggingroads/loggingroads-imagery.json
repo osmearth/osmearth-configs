@@ -1,0 +1,310 @@
+{
+  "dataImagery": [
+    { "id": "peatland",
+      "name": "Congo Basin Peatland",
+      "type": "tms",
+      "template": "https://d3ug57i5ee5hwd.cloudfront.net/dargie-congo-peat/{z}/{x}/{y}.png",
+      "overlay": true
+    },   
+    { "id": "gsw",
+      "name": "JRC Global Surface Water",
+      "type": "tms",
+      "template": "https://storage.googleapis.com/global-surface-water/maptiles/transitions/{z}/{x}/{y}.png",
+      "overlay": true
+    },    
+     { "id": "hansen-treecover-2014",
+      "name": "Hansen/UMD Tree Cover 2014",
+      "type": "tms",
+      "template": "https://storage.googleapis.com/moabi-raster-tiles/hansen-umd-treecover-2014/{z}/{x}/{y}.png",
+      "overlay": true
+    },      
+     { "id": "tree-cover-loss-2000-2014",
+      "name": "Tree Cover Loss (2000-2014)",
+      "type": "tms",
+      "template": "https://d3ug57i5ee5hwd.cloudfront.net/lossyear/{z}/{x}/{y}.png",
+      "overlay": true
+     },
+     {
+      "id": "glad-alerts-2015-2018",
+      "name": "GLAD alerts (2015-2018)",
+      "type": "tms",
+      "template": "https://production-api.globalforestwatch.org/v1/true-color-tiles/glad/{z}/{x}/{y}",
+      "overlay": true
+     },
+      {
+      "id": "globcover-2009",
+      "name": "GlobCover 2009",
+      "type": "tms",
+      "template": "https://storage.googleapis.com/moabi-raster-tiles/globcover-2009/{z}/{x}/{y}.png",
+      "overlay": true
+     },                         
+     {
+      "id": "congo-basin-roads-2016",
+      "name": "Congo Basin Roads 2016",
+      "type": "tms",
+      "template": "https://mapforenvironment.org/raster/loggingroads/{z}/{x}/{y}.png",
+      "overlay": true
+    },
+   {
+       "name": "Bing aerial imagery",
+       "type": "bing",
+       "description": "Satellite and aerial imagery.",
+       "template": "https://www.bing.com/maps/",
+       "scaleExtent": [
+           0,
+           22
+       ],
+       "id": "Bing"
+   },
+   {
+    "id": "DigitalGlobe-Premium",
+    "name": "DigitalGlobe Premium Imagery",
+    "type": "tms",
+    "template": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/digitalglobe.316c9a2e/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqZGFrZ2c2dzFlMWgyd2x0ZHdmMDB6NzYifQ.9Pl3XOO82ArX94fHV289Pg",
+    "zoomExtent": [0, 22],
+    "terms_url": "https://wiki.openstreetmap.org/wiki/DigitalGlobe",
+    "terms_text": "Terms & Feedback",
+    "default": true,
+    "description": "DigitalGlobe-Premium is a mosaic composed of DigitalGlobe basemap with select regions filled with +Vivid or custom area of interest imagery, 50cm resolution or better, and refreshed more frequently with ongoing updates.",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/world/DigitalGlobePremiumImagery.png"
+  },
+  {
+    "id": "DigitalGlobe-Premium-vintage",
+    "name": "DigitalGlobe Premium Imagery Vintage",
+    "type": "tms",
+    "template": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/digitalglobe.2850d66c/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOTBkcmZjNzJ5ZnozNHF6NnVkOGd6ODYifQ.grAnqgpCjOaeq-ozqt4QNw",
+    "zoomExtent": [0, 22],
+    "terms_url": "https://wiki.openstreetmap.org/wiki/DigitalGlobe",
+    "terms_text": "Terms & Feedback",
+    "description": "Imagery boundaries and capture dates. Labels appear at zoom level 13 and higher.",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/world/DigitalGlobePremiumImagery.png",
+    "overlay": true
+  },
+  {
+    "id": "DigitalGlobe-Standard",
+    "name": "DigitalGlobe Standard Imagery",
+    "type": "tms",
+    "template": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqZGFrZ3pjczNpaHYycXFyMGo0djY3N2IifQ.90uebT4-ow1uqZKTUrf6RQ",
+    "zoomExtent": [0, 22],
+    "terms_url": "https://wiki.openstreetmap.org/wiki/DigitalGlobe",
+    "terms_text": "Terms & Feedback",
+    "default": true,
+    "description": "DigitalGlobe-Standard is a curated set of imagery covering 86% of the earth’s landmass, with 30-60cm resolution where available, backfilled by Landsat. Average age is 2.31 years, with some areas updated 2x per year.",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/world/DigitalGlobePremiumImagery.png"
+  },
+  {
+    "id": "DigitalGlobe-Standard-vintage",
+    "name": "DigitalGlobe Standard Imagery Vintage",
+    "type": "tms",
+    "template": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/digitalglobe.1412531a/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOTBlYWJ1ZDAza2YyeG14NWVodTA4OWUifQ.wVc8ZOuPuYVw39lhS2j3_g",
+    "zoomExtent": [0, 22],
+    "terms_url": "https://wiki.openstreetmap.org/wiki/DigitalGlobe",
+    "terms_text": "Terms & Feedback",
+    "description": "Imagery boundaries and capture dates. Labels appear at zoom level 13 and higher.",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/world/DigitalGlobePremiumImagery.png",
+    "overlay": true
+  },
+   {
+    "id": "Mapbox",
+    "name": "Mapbox Satellite",
+    "type": "tms",
+    "template": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/mapbox.satellite/{zoom}/{x}/{y}@2x.jpg?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJjaml5MjVyb3MwMWV0M3hxYmUzdGdwbzE4In0.q548FjhsSJzvXsGlPsFxAQ",
+    "tileSize": 512,
+    "zoomExtent": [0, 22],
+    "terms_url": "https://www.mapbox.com/about/maps",
+    "terms_text": "Terms & Feedback",
+    "default": true,
+    "description": "Satellite and aerial imagery.",
+    "icon": "https://osmlab.github.io/editor-layer-index/sources/world/MapBoxSatellite.png"
+  },
+    {
+      "id": "EsriWorldImagery",
+      "name": "Esri World Imagery",
+      "type": "tms",
+      "template": "https://{switch:services,server}.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+      "zoomExtent": [0, 22],
+      "terms_url": "https://wiki.openstreetmap.org/wiki/Esri",
+      "terms_text": "Terms & Feedback",
+      "default": true,
+      "description": "Esri world imagery.",
+      "icon": "https://osmlab.github.io/editor-layer-index/sources/world/EsriImageryClarity.png"
+    },
+    {
+      "id": "EsriWorldImageryClarity",
+      "name": "Esri World Imagery (Clarity) Beta",
+      "type": "tms",
+      "template": "https://clarity.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/{zoom}/{y}/{x}",
+      "zoomExtent": [0, 22],
+      "terms_url": "https://wiki.openstreetmap.org/wiki/Esri",
+      "terms_text": "Terms & Feedback",
+      "default": true,
+      "description": "Esri archive imagery that may be clearer and more accurate than the default layer.",
+      "icon": "https://osmlab.github.io/editor-layer-index/sources/world/EsriImageryClarity.png"
+    },
+   {
+       "name": "OpenStreetMap (Mapnik)",
+       "type": "tms",
+       "description": "The default OpenStreetMap layer.",
+       "template": "https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png",
+       "scaleExtent": [
+           0,
+           19
+       ],
+       "terms_url": "https://openstreetmap.org/",
+       "terms_text": "© OpenStreetMap contributors, CC-BY-SA",
+       "id": "MAPNIK",
+       "default": true
+   },           
+   {
+    "id": "l7-2016-global",
+    "name": "Landsat-7 2016 Global",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "template": "https://d2h71bpqsyf4vw.cloudfront.net/2016/{z}/{x}/{y}.png"
+   },
+   {
+    "id": "s2-2016",
+    "name": "Sentinel-2 2016",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://storage.googleapis.com/moabi-raster-tiles/congo_sentinel2_2016/{z}/{x}/{y}.png"
+   },
+   {
+    "id": "l7-2015",
+    "name": "Landsat-7 2015",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://d2h71bpqsyf4vw.cloudfront.net/2015/{z}/{x}/{y}.png"
+   },
+   {
+    "id": "s2-2015",
+    "name": "Sentinel-2 2015",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://storage.googleapis.com/moabi-raster-tiles/congo_sentinel2_2015/{z}/{x}/{y}.png"
+   },
+   {
+    "id": "l7-2014-global",
+    "name": "Landsat-7 2014 Global",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://storage.googleapis.com/earthenginepartners-hansen/tiles/gfc2015/last_457/{z}/{x}/{y}.jpg"
+   },
+   {
+    "id": "l7-2013",
+    "name": "Landsat-7 2013",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2013/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2012",
+    "name": "Landsat-7 2012",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2012/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2011",
+    "name": "Landsat-7 2011",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2011/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2010",
+    "name": "Landsat-7 2010",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2010/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2009", 
+    "name": "Landsat-7 2009",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2009/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2008", 
+    "name": "Landsat-7 2008",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2008/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2007",
+    "name": "Landsat-7 2007",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2007/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2006", 
+    "name": "Landsat-7 2006",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2006/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2005", 
+    "name": "Landsat-7 2005",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2005/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2004", 
+    "name": "Landsat-7 2004",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2004/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2003", 
+    "name": "Landsat-7 2003",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2003/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2002",
+    "name": "Landsat-7 2002",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2002/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2001", 
+    "name": "Landsat-7 2001",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2001/{z}/{y}/{x}.png"
+   },
+   {
+    "id": "l7-2000", 
+    "name": "Landsat-7 2000",
+    "type": "tms",
+    "zoomExtent": [0, 14],
+    "description": "Congo Basin",
+    "template": "https://wri-tiles.s3.amazonaws.com/umd_landsat/2000/{z}/{y}/{x}.png"
+   }
+  ]
+}
