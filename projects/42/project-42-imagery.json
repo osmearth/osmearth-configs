@@ -43,7 +43,7 @@
     "type": "tms",
     "zoomExtent": [0, 12],
     "description": "False color for roads",
-    "template": "https://storage.googleapis.com/moabi-raster-tiles/cpng-nw-roads-sentinel2-2018/{z}/{x}/{y}.png"
+    "template": "https://storage.googleapis.com/moabi-raster-tiles/png-nw-roads-sentinel2-2018/{z}/{x}/{y}.png"
    },
    {
     "id": "s2-2018",
