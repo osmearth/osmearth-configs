@@ -1,5 +1,6 @@
 {
-  "alias": ["osmearth-configs"],
+  "version": 1,
+  "alias": ["osmearth"],
   "github": {
     "enabled": "true"
   },
